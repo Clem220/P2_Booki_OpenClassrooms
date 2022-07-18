@@ -1,0 +1,406 @@
+/* Adapté à écran portable */
+
+
+/* Elements principaux de la page */
+
+
+i{
+    color: #0065FC;   
+}
+
+h3{
+    font-family:'ralewaythin', Arial, Helvetica, sans-serif ;
+    font-size: 18px;
+}
+
+a{
+    font-family:'ralewaythin', Arial, Helvetica, sans-serif ;
+    text-decoration: none;
+    color: black;
+}
+
+/* header */
+
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    height: 100%;
+    width: auto;
+    padding: 10% 0% 0% 0%;
+}
+
+nav{
+    margin: 0px;
+    width: 100%;
+}
+
+nav a:hover{
+    border-bottom: 4px solid #0065FC;
+}
+
+.liens{
+    padding: 0px;
+}
+
+.liens a{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 4px solid #F2F2F2;
+}
+
+/* formulaire recherche */
+
+#recherche{
+    display: flex;
+    flex-direction: column;
+}
+
+#formulaire{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 25px;
+    height: 50px;
+}
+#map i{
+    width: 50px;
+    height: 49px;
+    border: 1px solid #F2F2F2;
+    color: black;
+    background-color:#F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#formulaire input{
+    height: 48px;
+}
+
+#search{
+    display: none;
+}
+
+form{
+    border:  1px solid #F2F2F2;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#formulaire button{
+    display: flex;
+    float: right;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px 15px 15px 15px;
+    border: none;
+    background-color: #0065FC;
+    padding: 0;
+}
+
+#formulaire button:hover{
+    opacity: 50%;
+  }
+
+button i{
+    color: white;
+}
+
+input[value]{
+    background-color: #0065FC;
+    border-radius: 0px 15px 15px 0px;
+}
+
+#critères{
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: unset;
+}
+
+.critères__filtres{
+    flex-wrap: wrap;
+}
+
+.filtres{
+margin: 1% 2% 1% 2%;
+}
+
+.filtres i{
+    color: #0065FC;
+}
+
+#nbr_logements{
+    display: flex;
+    align-items: center;
+}
+
+#nbr_logements i{
+    padding-right: 10px;
+}
+/* section */
+
+section{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+}
+
+#hebergement{
+    order: 2;
+    display: block;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    border: none;
+    border-radius: 0;
+    margin: 0px;
+    background-color: #FFFFFF;
+}
+
+#hebergement h2{
+    margin: 20px 0px 0px 40px;
+}
+
+#hebergement button{
+    margin: 5px 20px; 
+}
+button:hover{
+    text-decoration: underline;
+}
+
+.hotel_box{
+    display: block;
+    width: auto;
+    border: none;
+    background: white;
+    border-radius: 25px;
+    margin: 0px 25px;
+}
+
+.hotel{
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: 250px;
+    border-radius: 25px 25px;
+    overflow: hidden;
+    background-color: #FFFFFF;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+#populaires{
+    order: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: auto; 
+    background-color: #F2F2F2;
+    border-radius: 0px;
+    margin: 0;
+    right: 0;
+}
+
+#pop{
+    margin: 2% 5% 0%;
+}
+
+.hotel_box2{
+    display: flex; 
+    width: auto;
+    height: 150px;
+    margin: 25px 25px;
+    border: none;
+    border-radius: 25px 25px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+
+.description2{
+    padding: 0% 5% ;
+}
+
+.description2 i{
+    padding: 0;
+}
+
+.hotel_box2 .description2 {
+    width: 80%;
+    padding: 0 10px;
+}
+
+.hotel_box2 .img-container {
+    width: 50%;
+    overflow: hidden;
+}
+
+.hotel_box2 img{
+    border: none;
+    border-radius: 25px 0px 0px 25px;
+    overflow: hidden;
+    height: 140px; 
+    width: 100%;
+    min-width: 100%;
+    object-fit: cover;
+ 
+}
+
+.hotel_box2 h3 p{
+    margin: 0px 10px;
+} 
+
+/* Activités */
+
+#A_marseille{
+    order: 3;
+    display: block;
+    flex-direction: column;
+    height: auto;
+    margin: 0px;
+}
+
+#A_marseille h2{
+    margin: 45px;
+}
+
+#activites{
+    margin: 0px;
+    display: block;
+    justify-content: space-around;
+}
+
+
+.lien_c{
+    width: 100%;
+    display: contents;
+    justify-content: center;
+  }
+  
+.lien_a{
+    width: 25%;
+    display: contents;
+    justify-content: center;
+    margin-right: 2%;
+}
+
+.colone{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.activites{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 25px;
+    width: auto;
+    height: 250px;
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.activites h3{
+    margin-left: 20px;
+}
+
+.activites img{
+   height: 350px;
+   overflow: hidden;
+}
+
+.act1{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: auto;
+    margin: 25px 25px;
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.act1 img{
+    min-height: 0;
+    min-width: 0;
+}
+.act1 h3{
+    margin-left: 20px;
+}
+
+.act2{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: auto;
+    margin: 25px 25px;
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.act2 img{
+    min-height: 0;
+    min-width: 0;
+}
+.act2 h3{
+    margin-left: 20px;
+}
+
+.act3{
+    display: flex;
+    flex-direction: column;
+    height: 250px;
+    width: auto;
+    margin: 25px 25px;
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.act3 img{
+    min-height: 0;
+    min-width: 0;
+}
+.act3 h3{
+    margin-left: 20px;
+}
+
+.act4{
+    display: flex;
+    flex-direction: column;
+    margin: 25px 25px;
+    height: 250px;
+    width: auto;
+    border: none;
+    border-radius: 25px;
+    overflow: hidden;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+}
+.act4 img{
+    min-height: 0;
+    min-width: 0;
+}
+.act4 h3{
+    margin-left: 20px;
+}
+
+/* footer */
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: justify;
+    background-color: #F2F2F2;
+    padding: 10px 45px;
+}
